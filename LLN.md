@@ -1,5 +1,6 @@
 # LLN Simulation
 * Go to [this website](https://rdrr.io/snippets/)
+* Delete any code in the white window
 * Copy the below code into the window
 ```
 n_samp = 1000
