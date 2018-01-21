@@ -4,10 +4,9 @@
 * Copy the below code into the window
 
 ```
-n_samp = 2
-true_mean = 50
+n_samp = 1000
 
-vec_samp = replicate(1000,mean(rnorm(mean = true_mean, sd = 10, n = n_samp)))
+vec_samp = replicate(1000,mean(runif( min= 0, max = 100, n = n_samp)))
 hist(vec_samp, xlim = c(0,100),breaks=seq(0,100,1))
 ```
 * Hit the Green **Run** Button
