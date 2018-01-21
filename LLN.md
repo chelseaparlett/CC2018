@@ -2,11 +2,13 @@
 * Go to [this website](https://rdrr.io/snippets/)
 * Delete any code in the white window
 * Copy the below code into the window
+
 ```
-n_samp = 1000
+n_samp = 2
 true_mean = 50
+
 vec_samp = replicate(100,mean(rnorm(mean = true_mean, sd = 10, n = n_samp)))
-hist(vec_samp, xlim = c(0,100))
+hist(vec_samp, xlim = c(0,100),breaks=seq(0,100,2))
 ```
 * Hit the Green **Run** Button
 
