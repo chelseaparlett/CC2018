@@ -4,10 +4,13 @@
 * Copy the below code into the window
 
 ```
-n_samp = 1000
+#how large are your samples?
+size_of_samples = 1000
 
-vec_samp = replicate(1000,mean(runif( min= 0, max = 100, n = n_samp)))
-hist(vec_samp, xlim = c(0,100),breaks=seq(0,100,1))
+#generate data
+simulated_data = replicate(1000,mean(runif( min= 0, max = 100, n = size_of_samples)))
+#make histogram
+hist(simulated_data, xlim = c(0,100),breaks=seq(0,100,1))
 ```
 * Hit the Green **Run** Button
 
